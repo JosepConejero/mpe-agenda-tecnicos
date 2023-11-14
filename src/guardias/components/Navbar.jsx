@@ -1,6 +1,6 @@
 import { Link as RouterLink } from "react-router-dom";
 
-import { /* CalendarMonth,  */ LogoutOutlined } from "@mui/icons-material";
+import { LogoutOutlined } from "@mui/icons-material";
 import SettingsIcon from "@mui/icons-material/Settings";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import {
@@ -14,7 +14,6 @@ import {
 import { useAuthStore } from "../../hooks";
 import { Link } from "@mui/material";
 
-//export const Navbar = ({ drawerWidth = 240 }) => {
 export const Navbar = () => {
   const { startLogout, user } = useAuthStore();
 
@@ -25,12 +24,11 @@ export const Navbar = () => {
         width: { sm: `calc(100% - ${0}px)` },
         ml: { md: `${0}px` },
         pl: { md: "10px" },
-        //zIndex: "800",
-        //"& .MuiPaper-root": { zIndex: 800 },
       }}
     >
       <Toolbar>
         <IconButton color="inherit" edge="start" sx={{ mr: { xs: 0, md: 2 } }}>
+
           <ImageListItem>
             <img src="/assets/logo-navbar.png" alt="logo de MPE"></img>
           </ImageListItem>
@@ -39,9 +37,8 @@ export const Navbar = () => {
         <Grid
           container
           direction={{ xs: "column", md: "row" }}
-          justifyContent={{ xs: "space-between", md: "space-between" }}
+          justifyContent="space-between"
           alignItems={{ xs: "flex-start", md: "center" }}
-          // sx={{ border: 1 }}
         >
           <Grid
             item
