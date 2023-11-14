@@ -119,6 +119,7 @@ export const DayModal = ({ closeModal }) => {
             id="dialog-guard-day"
             sx={{
               width: { xs: "390px", md: "900px" },
+              my: { xs: 6, md: 0 },
             }}
           >
             <Grid
