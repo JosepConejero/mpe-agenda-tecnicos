@@ -8,6 +8,7 @@ import { useAuthStore } from "../hooks";
 import { useEffect } from "react";
 import { SettingsPage } from "../guardias/pages/SettingsPage";
 import { Spinner } from "../guardias/customizedComponents/Spinner";
+import { NextCoursesPage } from "../guardias/nextCourses/NextCoursesPage";
 
 export const AppRouter = () => {
   const { status, checkAuthToken } = useAuthStore();

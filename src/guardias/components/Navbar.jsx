@@ -52,7 +52,7 @@ export const Navbar = () => {
           </Grid>
 
           <Grid item sx={{ mr: { xs: -1.5, md: -1 } }}>
-            <Link component={RouterLink} color="inherit" to="/guardias">
+            <Link component={RouterLink} color="inherit" to="/next-courses">
               <IconButton color="inherit">
                 <PendingActionsIcon />
               </IconButton>
