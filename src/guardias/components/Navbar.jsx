@@ -3,6 +3,7 @@ import { Link as RouterLink } from "react-router-dom";
 import { LogoutOutlined } from "@mui/icons-material";
 import SettingsIcon from "@mui/icons-material/Settings";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import PendingActionsIcon from "@mui/icons-material/PendingActions";
 import {
   AppBar,
   Grid,
@@ -28,7 +29,6 @@ export const Navbar = () => {
     >
       <Toolbar>
         <IconButton color="inherit" edge="start" sx={{ mr: { xs: 0, md: 2 } }}>
-
           <ImageListItem>
             <img src="/assets/logo-navbar.png" alt="logo de MPE"></img>
           </ImageListItem>
@@ -66,6 +66,11 @@ export const Navbar = () => {
               </Grid>
               {/* <Grid item sx={{ mr: { xs: -1.5, md: -1 }, border: 1 }}> */}
               <Grid item sx={{ mr: { md: -1 }, ml: { xs: 8 } }}>
+                <Link component={RouterLink} color="inherit" to="/guardias">
+                  <IconButton color="inherit">
+                    <PendingActionsIcon />
+                  </IconButton>
+                </Link>
                 <Link component={RouterLink} color="inherit" to="/guardias">
                   <IconButton color="inherit">
                     <CalendarMonthIcon />
